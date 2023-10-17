@@ -25,7 +25,7 @@ import boto3
 
 subprocess.check_call([sys.executable, "-m", "conda", "install", "-c", "pytorch", "pytorch==1.6.0", "-y"])
 
-subprocess.check_call([sys.executable, "-m", "conda", "install", "-c", "conda-forge", "transformers==3.5.1", "-y"])
+subprocess.check_call([sys.executable, "-m", "pip", "install", "transformers==3.5.1"])
 from transformers import RobertaTokenizer
 
 if __name__ == "__main__":
